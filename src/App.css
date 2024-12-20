@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -127,4 +127,110 @@ table th {
 .app-footer p {
   margin: 0;
   font-size: 0.9rem;
+}
+ */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  min-width: 100vw;
+  background-color: #f8f9fa;
+}
+
+.app-header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: gainsboro;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+.book-list-container {
+  margin-top: 40px;
+  width: 70%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  font-size: 1rem;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 1.5rem;
+}
+
+table th {
+  background-color: #343a40;
+  color: white;
+}
+
+.btn-sort {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.btn-sort:hover {
+  color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
