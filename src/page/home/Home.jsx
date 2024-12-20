@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const loadBooks = async () => {
       try {
-        const response = await fetch("https://bookmanagementbackend-production.up.railway.app/api/books");
+        const response = await fetch("http://localhost:8080/api/books");
         const data = await response.json();
         // Sort books by title in ascending order (A-Z)
         const sortedBooks = data.sort((a, b) => a.title.localeCompare(b.title));
@@ -24,7 +24,7 @@ export default function Home() {
 
   const handleDeleteBook = async (id) => {
     try {
-      await fetch(`https://bookmanagementbackend-production.up.railway.app/api/books/${id}`, {
+      await fetch(`http://localhost:8080/api/books/${id}`, {
         method: "DELETE",
       });
       setBooks((prevBooks) => prevBooks.filter((book) => book.id !== id));
