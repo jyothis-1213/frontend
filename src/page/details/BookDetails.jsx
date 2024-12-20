@@ -13,7 +13,7 @@ const BookDetails = () => {
         const fetchBookDetails = async () => {
             try {
                 console.log(`Fetching details for book ID: ${id}`); // Debugging
-                const response = await fetch(`https://bookmanagementbackend-production.up.railway.app/api/books/${id}`);
+                const response = await fetch(`http://localhost:8080/api/books/${id}`);
                 const data = await response.json();
                 setBook(data);
             } catch (error) {
