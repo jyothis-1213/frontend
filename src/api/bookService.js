@@ -1,4 +1,4 @@
-const BASE_URL = "https://bookmanagementbackend-production.up.railway.app/api/books";
+const BASE_URL = "http://localhost:8080/api/books";
 
 export const fetchBookById = async (id) => {
     const response = await fetch(`${BASE_URL}/${id}`);
